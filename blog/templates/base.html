@@ -1,0 +1,22 @@
+{% load static %}
+<html>
+      <head>
+            <title>Posts</title>
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400"
+      rel="stylesheet">
+      <link href="{% static 'css/base.css' %}" rel="stylesheet">
+      </head>
+
+      <head>
+            <title>Admins' posts</title>
+      </head>
+      <body>
+            <header>
+                  <h1><a href="{% url 'home' %}">Posts from admins</a></h1>
+            </header>
+            <div>
+                  {% block content %}
+                  {% endblock content %}
+             </div>
+      </body>
+</html>
